@@ -15,5 +15,10 @@
     <p class="muted credit">Created by <a href="http://joyviewer.com/u/kushal00">Kushal Dongre</a>.</p>
   </div>
 </div>
+<script type="text/javascript">
+$(document).on('page:fetch',   function() { NProgress.start(); });
+$(document).on('page:change',  function() { NProgress.done(); });
+$(document).on('page:restore', function() { NProgress.remove(); });
+</script>
 </body>
 </html>
